@@ -20,3 +20,4 @@ RUN curl http://accellera.org/images/downloads/standards/systemc/systemc-$SYSTEM
  && cd .. \
  && rm -rf objdir
 
+ENV CPLUS_INCLUDE_PATH /usr/local/systemc-$SYSTEMC_VERSION/include
