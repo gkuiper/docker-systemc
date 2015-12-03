@@ -21,3 +21,4 @@ RUN curl http://accellera.org/images/downloads/standards/systemc/systemc-$SYSTEM
  && rm -rf objdir
 
 ENV CPLUS_INCLUDE_PATH /usr/local/systemc-$SYSTEMC_VERSION/include
+ENV LIBRARY_PATH /usr/local/systemc-$SYSTEMC_VERSION/lib-linux64
