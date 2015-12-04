@@ -7,8 +7,9 @@ RUN apt-get update -q && apt-get install -qy --no-install-recommends \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
 
-RUN curl http://accellera.org/images/downloads/standards/systemc/systemc-$SYSTEMC_VERSION.tgz | tar -xz \
- && cd systemc-$SYSTEMC_VERSION \
+RUN mkdir -p /usr/src/systemc \ 
+ && curl http://accellera.org/images/downloads/standards/systemc/systemc-$SYSTEMC_VERSION.tgz | tar -xzC /usr/src/systemc \
+ && cd /usr/src/systemc/systemc-$SYSTEMC_VERSION \
  && mkdir objdir \
  && cd objdir \
  && export CXX=g++ \
@@ -17,8 +18,8 @@ RUN curl http://accellera.org/images/downloads/standards/systemc/systemc-$SYSTEM
  && make \
  && make install \
  && make check \
- && cd .. \
- && rm -rf objdir
+ && cd / \
+ && rm -rf /usr/src/systemc
 
 ENV CPLUS_INCLUDE_PATH /usr/local/systemc-$SYSTEMC_VERSION/include
 ENV LIBRARY_PATH /usr/local/systemc-$SYSTEMC_VERSION/lib-linux64
