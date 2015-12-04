@@ -1,6 +1,6 @@
 FROM ubuntu:trusty
 MAINTAINER Guus Kuiper
-ENV SYSTEMC_VERSION 2.3.0
+ENV SYSTEMC_VERSION 2.3.1
 
 RUN apt-get update -q && apt-get install -qy --no-install-recommends \
       build-essential curl \
