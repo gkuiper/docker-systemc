@@ -21,5 +21,6 @@ RUN mkdir -p /usr/src/systemc \
  && cd / \
  && rm -rf /usr/src/systemc
 
-ENV CPLUS_INCLUDE_PATH /usr/local/systemc-$SYSTEMC_VERSION/include
-ENV LIBRARY_PATH /usr/local/systemc-$SYSTEMC_VERSION/lib-linux64
+ENV CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:/usr/local/systemc-$SYSTEMC_VERSION/include
+ENV LIBRARY_PATH=$LIBRARY_PATH:/usr/local/systemc-$SYSTEMC_VERSION/lib-linux64
+ENV LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/systemc-$SYSTEMC_VERSION/lib-linux64
