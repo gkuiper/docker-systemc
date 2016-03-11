@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--   [`2.3.0` (*2.3.0/Dockerfile*)](https://github.com/gkuiper/docker-systemc/blob/master/Dockerfile)
+-   [`2.3.0` (*2.3.0/Dockerfile*)](https://github.com/gkuiper/docker-systemc/blob/master/ubuntu/Dockerfile)
 -   [`2.3.0-alpine` (*2.3.0/alpine/Dockerfile*)](https://github.com/gkuiper/docker-systemc/blob/master/alpine/Dockerfile)
--   [`2.3.1` (*2.3.1/Dockerfile*)](https://github.com/gkuiper/docker-systemc/blob/2.3.1/Dockerfile)
+-   [`2.3.1` (*2.3.1/Dockerfile*)](https://github.com/gkuiper/docker-systemc/blob/2.3.1/ubuntu/Dockerfile)
 -   [`2.3.1-alpine` (*2.3.1/Dockerfile*)](https://github.com/gkuiper/docker-systemc/blob/2.3.1/alpineDockerfile)
 
 # How to use this image
