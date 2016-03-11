@@ -4,6 +4,7 @@ ENV SYSTEMC_VERSION 2.3.0
 
 RUN apt-get update -q && apt-get install -qy --no-install-recommends \
       build-essential curl \
+      cmake \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
 
