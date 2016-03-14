@@ -9,6 +9,5 @@
 
 ```console
 $ docker pull guusk/docker-systemc:<tag>
-$ docker run -it --rm --name my-srcs -v "$PWD":/usr/src/mysrcs -w /usr/src/mysrcs guusk/docker-systemc:2.3.0 make
+$ docker run -it --rm --name my-srcs -v "$PWD":/usr/src/mysrcs -w /usr/src/mysrcs guusk/docker-systemc:<tag> bash
 ```
-[<tag>](#supported-tags-and-respective-dockerfile-links)
