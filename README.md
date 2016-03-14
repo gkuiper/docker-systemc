@@ -8,6 +8,6 @@
 # How to use this image
 
 ```console
-$ docker pull guusk/docker-systemc
+$ docker pull guusk/docker-systemc:[<tag>](#supported-tags-and-respective-dockerfile-links)
 $ docker run -it --rm --name my-srcs -v "$PWD":/usr/src/mysrcs -w /usr/src/mysrcs guusk/docker-systemc:2.3.0 make
 ```
